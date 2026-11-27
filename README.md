@@ -8,24 +8,25 @@ Página pronta para captar donos de delivery (hamburgueria, pizzaria, açaí, ma
 - `site.zip`: a mesma pasta compactada, para subir de uma vez.
 - `material-em-alta/`: as fotos em tamanho original (comida, cozinha, motoboy, suas fotos e o logo), para anúncio, post e story.
 
-## Colocar no ar em delivery.apicegolddigital.com.br (HostGator, 5 minutos)
+## Colocar no ar em delivery.apicegolddigital.com.br (Hostinger, 5 minutos)
 
 **1. Criar o subdomínio**
-1. Entre no cPanel da HostGator (Portal do Cliente > Gerenciar > cPanel).
-2. Em **Domínios**, clique em **Domínios** (ou **Subdomínios**, conforme a versão).
-3. Crie o subdomínio `delivery` no domínio `apicegolddigital.com.br`.
-4. A pasta raiz sugerida é `public_html/delivery`. Pode deixar assim.
+1. Entre no hPanel da Hostinger e abra **Sites > apicegolddigital.com.br > Painel**.
+2. No menu lateral, vá em **Domínios > Subdomínios**.
+3. Digite `delivery` e clique em **Criar**. A pasta fica `public_html/delivery`. Pode deixar assim.
 
 **2. Subir a página**
-1. No cPanel, abra o **Gerenciador de Arquivos** e entre em `public_html/delivery`.
-2. Clique em **Carregar** e envie o arquivo `site.zip`.
-3. Clique com o botão direito no `site.zip` > **Extract** (Extrair). Confira se o `index.html` ficou direto dentro de `delivery`, e não numa subpasta.
+1. No menu lateral, abra **Arquivos > Gerenciador de Arquivos** e entre em `public_html/delivery`.
+2. Clique no ícone de **Upload** e envie o arquivo `site.zip`.
+3. Clique com o botão direito no `site.zip` > **Extrair**. Confira se o `index.html` ficou direto dentro de `delivery`, e não numa subpasta.
 4. Apague o `site.zip`.
 
 **3. Ligar o SSL**
-No cPanel, em **Segurança > SSL/TLS Status**, marque `delivery.apicegolddigital.com.br` e clique em **Run AutoSSL**. Em alguns minutos a página abre com cadeado.
+Em **Segurança > SSL**, confira se `delivery.apicegolddigital.com.br` aparece como ativo. Se não aparecer, clique em **Instalar SSL** e escolha o subdomínio. Em alguns minutos a página abre com cadeado.
 
 Pronto: https://delivery.apicegolddigital.com.br
+
+> Se o subdomínio não abrir: o DNS do domínio precisa estar apontado para a Hostinger. Hoje ele aponta para servidores da HostGator (ns1058/ns1059.hostgator.com.br). Se o site principal ainda está na HostGator, crie o subdomínio lá, no cPanel, com os mesmos passos (Domínios > Subdomínios, Gerenciador de Arquivos, SSL/TLS Status > Run AutoSSL).
 
 ## Página privada até você aprovar
 
